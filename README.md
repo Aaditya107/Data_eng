@@ -175,4 +175,4 @@ group by t1.title ;
 select emp_no, cast(to_date(from_unixtime(unix_timestamp(hire_date, 'dd/MM/yyyy')))) as started,
        cast(to_date(from_unixtime(unix_timestamp(last_date, 'dd/MM/yyyy')))) as ended,
        year(cast(to_date(from_unixtime(unix_timestamp(last_date, 'dd/MM/yyyy')))))-year(cast(to_date(from_unixtime(unix_timestamp(hire_date, 'dd/MM/yyyy')))))
-from employeees;
+from employees;
