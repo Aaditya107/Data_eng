@@ -156,7 +156,8 @@ select t1.emp_no, t2.emp_no, t1.first_name, t1.last_name, t1.sex, t2.salary
 from employees t1
 inner join salaries t2 on t1.emp_no = t2.emp_no
 
-![image](https://user-images.githubusercontent.com/105859216/169289815-59ebd8c5-3ea4-497d-9e80-752b4f157db0.png)
+![employee salary](https://user-images.githubusercontent.com/105859216/169431103-485f2dea-7bda-470e-b793-0b4d715d7014.png)
+
 
 --10 Bar graph to show the Average salary per title (designation)
 
@@ -166,7 +167,8 @@ inner join employees t2 on t1.title_id = t2.emp_title_id
 inner join salaries t3 on t2.emp_no=t3.emp_no  
 group by t1.title ;
 
-![image](https://user-images.githubusercontent.com/105859216/169290055-3044ce6c-9739-4d2b-9cf7-c487db39f462.png)
+![salary per gender](https://user-images.githubusercontent.com/105859216/169431121-a7cb107a-6fd7-4cef-a9c3-74c28b7f35ec.png)
+
 
 --11 Calculate employee tenure & show the tenure distribution among the employees
 
